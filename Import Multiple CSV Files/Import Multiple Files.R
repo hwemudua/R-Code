@@ -6,7 +6,7 @@ library(tidyverse)
 library(fs)
 
 # 2.0 IMPORT DATA INTO SINGULAR DATASET ----
-file_paths <- "Import Multiple CSV Files /data/"
+file_paths <- "Import Multiple CSV Files/data/"
 car_data_list <- file_paths %>%
     dir_ls() %>%
     map(
