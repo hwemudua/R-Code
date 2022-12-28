@@ -1,2 +1,6 @@
-# test readme markdown file
-I am testing creating and updating a readme markdown file
+## R code examples 
+---
+#### 
+1. A repository for R code 
+2. Sharing R tips and tricks
+3. Testing GIT connections in R
