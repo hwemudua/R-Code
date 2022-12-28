@@ -6,7 +6,7 @@ library(tidyverse)
 library(fs)
 
 # 2.0 IMPORT DATA INTO SINGULAR DATASET ----
-file_paths <- "001_read_multiple_files/data/"
+file_paths <- "Import Multiple CSV Files /data/"
 car_data_list <- file_paths %>%
     dir_ls() %>%
     map(
@@ -31,7 +31,6 @@ car_data_list <- file_paths %>%
     )
 
 # 3.0 BINDING DATA FRAMES ----
-# - bind_rows() : Taught in DS4B 101-R
 
 car_data_tbl <- car_data_list %>%
     set_names(dir_ls(file_paths)) %>%
